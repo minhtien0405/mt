@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        h1{
+            font-size: 40px;
+            transition-delay: 0.1s;
+        }
+        input{
+            margin-top: 15px;
+            border: none;
+            border-bottom: 2px solid gray;
+            width: 500px;
+        }
+        input#box1{
+            width: 10px;
+            margin: 15px;
+        }
+        button{
+            width: 500px;
+            height: 50px;
+            font-size: 20px;
+            background-color: #3399FF;
+            border: none;
+            border-radius: 5px;
+        }
+        p{
+            position: relative;
+            left: 230px;
+            font-size: 20px;
+        }
+        .contain{
+            display: flex;
+            align-items:stretch;
+        }
+        .item1{
+            margin-right: 65px;
+        }
+        label{
+            font-size: 20px;
+        }
+        .item1 label, .item2 label{
+            position: relative;
+            top: -15px;
+        }
+        h1:hover{
+            color: blue;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Create Account</h1>
+    <form action="">
+      <div class="name">
+        <input type="text" name="username" placeholder="Full Name" />
+      </div>
+      <div class="mail">
+        <input type="text" name="email" placeholder="Email" />
+      </div>
+      <div class="pass">
+        <input type="text" name="password" placeholder="Password" />
+      </div>
+      <div class="confirm">
+        <input type="text" name="confirmpassword" placeholder="Confirm Password" />
+      </div>
+      <div class="check">
+        <input type="checkbox" name="box" id="box1" />
+        <label for="box1"
+          >I have read and agreed to the Terms of Service and Privacy
+          Policy</label
+        >
+      </div>
+      <div class="but"><button>Create Account</button></div>
+    </form>
+    <p>Or</p>
+    <div class="contain">
+        <div class="item1">
+            <img src="./assets/images/google.jfif" width="40" height="40" alt="anh google">
+            <label for="">signup with Google</label>
+        </div>
+        <div class="item2">
+            <img src="./assets/images/fb.png" width="40" height="40" alt="anh facebook">
+            <label for="">signup with Facebook</label>
+        </div>
+    </div>
+  </body>
+</html>
